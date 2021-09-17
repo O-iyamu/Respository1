@@ -9,15 +9,13 @@ public class AddressBook {
 
     private ArrayList<BuddyInfo> Buddies = new ArrayList<BuddyInfo>();
 
-    private void addBuddy(String name, String address, String phoneNumber){
-        BuddyInfo newBuddy = new BuddyInfo(name, address, phoneNumber);
+    private void addBuddy(BuddyInfo newBuddy){
         Buddies.add(newBuddy);
     }
 
-    private void removeBuddy(String name, String address, String phoneNumber){
-        BuddyInfo newBuddy = new BuddyInfo(name, address, phoneNumber);
+    private void removeBuddy(BuddyInfo buddyToRemove){
         for(BuddyInfo buddy : Buddies){
-            if (buddy.equals(newBuddy)){
+            if (buddy.equals(buddyToRemove)){
                 Buddies.remove(buddy);
             }
         }
@@ -25,6 +23,12 @@ public class AddressBook {
 
     public static void main(String[] args) {
         System.out.println("Address Book");
+
+        BuddyInfo Buddy = new BuddyInfo("Buddy", "101 Street", "+1 (229)2442361");
+        AddressBook addy = new AddressBook();
+        addy.addBuddy(Buddy);
+        addy.removeBuddy(Buddy);
     }
+
 
 }
