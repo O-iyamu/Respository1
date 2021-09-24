@@ -19,6 +19,7 @@ public class BuddyInfo {
     public String getAddy() {
         return address;
     }
+    public String getPhoneNumber(){return phoneNumber; }
 
     public static void main(String[] args) {
         BuddyInfo homer = new BuddyInfo("Homer", "101 Street", "+1 (227)2342357");
