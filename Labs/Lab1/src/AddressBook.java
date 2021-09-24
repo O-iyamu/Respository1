@@ -5,7 +5,6 @@ public class AddressBook {
     BuddyInfo marge = new BuddyInfo("Marge", "101 Street", "+1 (287)2942055");
     BuddyInfo bart = new BuddyInfo("Bart", "101 Street", "+1 (227)2348756");
     BuddyInfo lisa = new BuddyInfo("Lisa", "101 Street", "+1 (287)2354359");
-    BuddyInfo maggie = new BuddyInfo("Maggie", "101 Street", "+1 (229)2442361");
 
     private ArrayList<BuddyInfo> Buddies = new ArrayList<BuddyInfo>();
 
